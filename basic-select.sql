@@ -49,3 +49,14 @@ https://www.hackerrank.com/challenges/weather-observation-station-3/problem?h_r=
 SELECT DISTINCT(CITY) FROM STATION
     WHERE ID%2 = 0;
 
+/*
+Weather Observation Station 4
+https://www.hackerrank.com/challenges/weather-observation-station-4/problem?h_r=next-challenge&h_v=zen
+*/
+SELECT (COUNT(CITY)-COUNT(DISTINCT(CITY)))
+    FROM STATION;
+
+/*
+Weather Observation Station 5
+https://www.hackerrank.com/challenges/weather-observation-station-5/problem?h_r=next-challenge&h_v=zen
+*/
