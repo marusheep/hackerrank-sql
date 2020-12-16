@@ -100,3 +100,14 @@ https://www.hackerrank.com/challenges/weather-observation-station-9/
 SELECT DISTINCT(CITY) FROM STATION
     WHERE CITY REGEXP "^(?i)[^aeiou].*";
 
+/*
+Weather Observation Station 10
+https://www.hackerrank.com/challenges/weather-observation-station-10/
+*/
+SELECT DISTINCT(CITY) FROM STATION
+    WHERE CITY NOT REGEXP ".*(?i)[aeiou]$";
+
+/*
+Weather Observation Station 11
+https://www.hackerrank.com/challenges/weather-observation-station-11/
+*/
