@@ -60,3 +60,22 @@ SELECT (COUNT(CITY)-COUNT(DISTINCT(CITY)))
 Weather Observation Station 5
 https://www.hackerrank.com/challenges/weather-observation-station-5/problem?h_r=next-challenge&h_v=zen
 */
+SELECT CITY, length(CITY) FROM STATION
+    ORDER BY length(CITY), CITY ASC
+    LIMIT 1;
+SELECT CITY, length(CITY) FROM STATION
+    ORDER BY length(CITY) DESC
+    LIMIT 1;
+
+/*
+Weather Observation Station 6
+https://www.hackerrank.com/challenges/weather-observation-station-6/problem?h_r=next-challenge&h_v=zen
+*/
+SELECT DISTINCT(CITY) FROM STATION
+    WHERE CITY REGEXP "^(?i)[aeiou].*"
+    ORDER BY CITY ASC;
+
+/*
+Weather Observation Station 7
+https://www.hackerrank.com/challenges/weather-observation-station-7/problem?h_r=next-challenge&h_v=zen
+*/
