@@ -111,3 +111,35 @@ SELECT DISTINCT(CITY) FROM STATION
 Weather Observation Station 11
 https://www.hackerrank.com/challenges/weather-observation-station-11/
 */
+SELECT DISTINCT(CITY) FROM STATION 
+    WHERE RIGHT (CITY, 1) NOT IN ('A','E', 'I', 'O', 'U') OR LEFT (CITY,1) NOT IN ('A','E', 'I', 'O', 'U');
+
+/*
+Weather Observation Station 12
+https://www.hackerrank.com/challenges/weather-observation-station-12/
+*/
+SELECT DISTINCT(CITY) FROM STATION 
+    WHERE RIGHT (CITY, 1) NOT IN ('A','E', 'I', 'O', 'U') AND LEFT (CITY,1) NOT IN ('A','E', 'I', 'O', 'U');
+
+/*
+Higher Than 75 Marks
+https://www.hackerrank.com/challenges/more-than-75-marks/
+*/
+SELECT Name FROM STUDENTS
+    WHERE Marks > 75
+    ORDER BY RIGHT(NAME,3) ASC, ID ASC;
+
+/*
+Employee Names
+https://www.hackerrank.com/challenges/name-of-employees/
+*/
+SELECT name FROM Employee
+    ORDER BY name asc;
+
+/*
+Employee Salaries
+https://www.hackerrank.com/challenges/salary-of-employees/
+*/
+SELECT name FROM Employee
+    WHERE salary > 2000 AND months < 10
+    ORDER BY employee_id asc;
