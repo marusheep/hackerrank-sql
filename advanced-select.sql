@@ -16,3 +16,7 @@ FROM TRIANGLES
 
 /* THE PADS
     https://www.hackerrank.com/challenges/the-pads/problem */
+
+SELECT concat(Name,'(',left(Occupation,1),')') AS Name FROM OCCUPATIONS
+ORDER BY Name asc
+-- need to check how to sort order of parentheses
