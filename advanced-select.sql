@@ -40,3 +40,7 @@ GROUP BY Occupation
 ORDER BY total;
 
 -- How to check plural and singular, TBC?
+
+
+/* Occupations
+    https://www.hackerrank.com/challenges/occupations/problem */
